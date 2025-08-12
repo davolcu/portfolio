@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParticleBackground from '../components/ParticleBackground.astro';
+import MobileNav from '../components/MobileNav.astro';
+import { Mail, Linkedin, Github, Rocket, BarChart3, Palette, ChevronDown, ArrowLeft } from '@lucide/astro';
+---
+
+<Layout title="Projects - David Olmos">
+  <ParticleBackground />
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold gradient-text" transition:name="site-title">David Olmos</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="/" class="text-white hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+            <a href="/#about" class="text-white hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+            <a href="/#skills" class="text-white hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+            <a href="/projects" class="text-purple-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+            <a href="/#contact" class="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 glow">Contact</a>
+          </div>
+        </div>
+        <MobileNav />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero Section -->
+  <section class="pt-32 pb-20 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <a href="/" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-8 transition-colors">
+          <ArrowLeft class="w-5 h-5" />
+          Back to Home
+        </a>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          <span class="gradient-text" transition:name="main-heading">My Projects</span>
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+          A collection of my work showcasing modern web development, creative solutions, and technical expertise.
+        </p>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto mt-8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="group bg-gradient-to-br from-purple-600/10 to-blue-600/10 p-6 rounded-2xl border border-white/10 hover:border-purple-500/40 transition-all duration-300 hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-lg mb-4 flex items-center justify-center">
+            <Rocket class="w-16 h-16 text-purple-400" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 gradient-text">E-Commerce Platform</h3>
+          <p class="text-gray-400 mb-4">A modern e-commerce solution built with Vue.js and Node.js, featuring real-time inventory and payment processing.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Vue.js</span>
+            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Node.js</span>
+            <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">MongoDB</span>
+          </div>
+          <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold transition-colors">View Project →</a>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="group bg-gradient-to-br from-blue-600/10 to-purple-600/10 p-6 rounded-2xl border border-white/10 hover:border-blue-500/40 transition-all duration-300 hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-lg mb-4 flex items-center justify-center">
+            <BarChart3 class="w-16 h-16 text-blue-400" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 gradient-text">Analytics Dashboard</h3>
+          <p class="text-gray-400 mb-4">Real-time analytics dashboard with interactive charts and data visualization using React and D3.js.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">React</span>
+            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">D3.js</span>
+            <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">Firebase</span>
+          </div>
+          <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors">View Project →</a>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="group bg-gradient-to-br from-pink-600/10 to-purple-600/10 p-6 rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300 hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-pink-600/20 to-purple-600/20 rounded-lg mb-4 flex items-center justify-center">
+            <Palette class="w-16 h-16 text-pink-400" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 gradient-text">Design System</h3>
+          <p class="text-gray-400 mb-4">Comprehensive design system with reusable components, built with Storybook and TypeScript.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-pink-600/20 text-pink-300 rounded-full text-sm">Storybook</span>
+            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">TypeScript</span>
+            <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Tailwind</span>
+          </div>
+          <a href="#" class="text-pink-400 hover:text-pink-300 font-semibold transition-colors">View Project →</a>
+        </div>
+
+        <!-- Additional Project Cards -->
+        <div class="group bg-gradient-to-br from-green-600/10 to-blue-600/10 p-6 rounded-2xl border border-white/10 hover:border-green-500/40 transition-all duration-300 hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-green-600/20 to-blue-600/20 rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-4xl">🌐</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 gradient-text">Portfolio Website</h3>
+          <p class="text-gray-400 mb-4">Modern portfolio website built with Astro and Tailwind CSS, featuring smooth animations and responsive design.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Astro</span>
+            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Tailwind</span>
+            <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">View Transitions</span>
+          </div>
+          <a href="#" class="text-green-400 hover:text-green-300 font-semibold transition-colors">View Project →</a>
+        </div>
+
+        <div class="group bg-gradient-to-br from-yellow-600/10 to-orange-600/10 p-6 rounded-2xl border border-white/10 hover:border-yellow-500/40 transition-all duration-300 hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-yellow-600/20 to-orange-600/20 rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-4xl">📱</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 gradient-text">Mobile App</h3>
+          <p class="text-gray-400 mb-4">Cross-platform mobile application built with React Native, featuring offline capabilities and push notifications.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">React Native</span>
+            <span class="px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm">Expo</span>
+            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Firebase</span>
+          </div>
+          <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold transition-colors">View Project →</a>
+        </div>
+
+        <div class="group bg-gradient-to-br from-red-600/10 to-pink-600/10 p-6 rounded-2xl border border-white/10 hover:border-red-500/40 transition-all duration-300 hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-red-600/20 to-pink-600/20 rounded-lg mb-4 flex items-center justify-center">
+            <span class="text-4xl">🤖</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 gradient-text">AI Chatbot</h3>
+          <p class="text-gray-400 mb-4">Intelligent chatbot powered by machine learning, integrated with natural language processing capabilities.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">Python</span>
+            <span class="px-3 py-1 bg-pink-600/20 text-pink-300 rounded-full text-sm">TensorFlow</span>
+            <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">FastAPI</span>
+          </div>
+          <a href="#" class="text-red-400 hover:text-red-300 font-semibold transition-colors">View Project →</a>
+        </div>
+      </div>
+      
+      <div class="text-center mt-16">
+        <a href="https://github.com/davolcu" target="_blank" rel="noopener noreferrer" 
+           class="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 glow hover:scale-105">
+          View All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-black border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-gray-400 text-sm">
+          © 2024 David Olmos. Built with ❤️ using Astro.
+        </div>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="https://github.com/davolcu" target="_blank" rel="noopener noreferrer" 
+             class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+            <Github class="w-5 h-5" />
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/david-olmos-b99452138/" target="_blank" rel="noopener noreferrer" 
+             class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+            <Linkedin class="w-5 h-5" />
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Layout>
