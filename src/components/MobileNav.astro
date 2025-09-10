@@ -29,7 +29,7 @@
             // Remove existing listeners to prevent duplicates
             mobileMenuButton.replaceWith(mobileMenuButton.cloneNode(true));
             const newButton = document.getElementById('mobile-menu-button');
-            
+
             if (newButton) {
                 newButton.addEventListener('click', () => {
                     mobileMenu.classList.toggle('active');
@@ -50,7 +50,7 @@
 
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', initMobileNav);
-    
+
     // Re-initialize after navigation (Astro specific)
     document.addEventListener('astro:page-load', initMobileNav);
 </script>
