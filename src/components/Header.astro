@@ -2,69 +2,70 @@
 import MobileNav from './MobileNav.astro';
 
 export interface Props {
-  currentPage?: 'home' | 'projects' | 'about' | 'skills';
+    currentPage?: 'home' | 'projects' | 'about' | 'skills' | 'contact';
 }
 
 const { currentPage = 'home' } = Astro.props;
 ---
 
-<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <div class="flex items-center">
-        <span class="text-2xl font-bold gradient-text" transition:name="site-title">David Olmos</span>
-      </div>
-      <div class="hidden md:block">
-        <div class="ml-10 flex items-baseline space-x-4">
-          <a 
-            href="/" 
-            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-              currentPage === 'home' 
-                ? 'text-purple-400' 
-                : 'text-white hover:text-purple-400'
-            }`}
-          >
-            Home
-          </a>
-          <a 
-            href="/about" 
-            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-              currentPage === 'about' 
-                ? 'text-purple-400' 
-                : 'text-white hover:text-purple-400'
-            }`}
-          >
-            About
-          </a>
-          <a 
-            href="/skills" 
-            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-              currentPage === 'skills' 
-                ? 'text-purple-400' 
-                : 'text-white hover:text-purple-400'
-            }`}
-          >
-            Skills
-          </a>
-          <a 
-            href="/projects" 
-            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-              currentPage === 'projects' 
-                ? 'text-purple-400' 
-                : 'text-white hover:text-purple-400'
-            }`}
-          >
-            Projects
-          </a>
-          <a 
-            href="/#contact" 
-            class="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 glow"
-          >
-            Contact
-          </a>
+<nav class='fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-center items-center h-16 relative'>
+            <!-- Mobile Logo - visible only on mobile -->
+            <div class='absolute left-0 top-0 h-full flex items-center md:hidden'>
+                <a href='/' class='block'>
+                    <img src='/favicon.svg' alt='David Olmos' class='w-8 h-8' width='32' height='32' loading='eager' />
+                </a>
+            </div>
+
+            <div class='hidden md:block w-full'>
+                <div class='flex justify-center items-baseline space-x-4'>
+                    <a
+                        href='/'
+                        class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                            currentPage === 'home' ? 'text-purple-400' : 'text-white hover:text-purple-400'
+                        }`}
+                    >
+                        Home
+                    </a>
+                    <a
+                        href='/about'
+                        class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                            currentPage === 'about' ? 'text-purple-400' : 'text-white hover:text-purple-400'
+                        }`}
+                    >
+                        About
+                    </a>
+                    <a
+                        href='/skills'
+                        class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                            currentPage === 'skills' ? 'text-purple-400' : 'text-white hover:text-purple-400'
+                        }`}
+                    >
+                        Skills
+                    </a>
+                    <a
+                        href='/projects'
+                        class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                            currentPage === 'projects' ? 'text-purple-400' : 'text-white hover:text-purple-400'
+                        }`}
+                    >
+                        Projects
+                    </a>
+                    <a
+                        href='/contact'
+                        class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                            currentPage === 'contact' ? 'text-purple-400' : 'text-white hover:text-purple-400'
+                        }`}
+                    >
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <div class='absolute right-0 top-0 h-full flex items-center'>
+                <MobileNav />
+            </div>
         </div>
-      </div>
-      <MobileNav />
     </div>
-  </div>
 </nav>

@@ -6,183 +6,248 @@ import Footer from '../components/Footer.astro';
 import { ArrowLeft } from '@lucide/astro';
 ---
 
-<Layout title="Skills - David Olmos">
-  <ParticleBackground />
-  
-  <Header currentPage="skills" />
+<Layout title='Skills - David Olmos'>
+    <ParticleBackground />
 
-  <!-- Skills Hero Section -->
-  <section class="pt-32 pb-20 bg-gradient-to-b from-black to-gray-900">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <a href="/" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-8 transition-colors">
-          <ArrowLeft class="w-5 h-5" />
-          Back to Home
-        </a>
-        <h1 class="text-5xl md:text-7xl font-bold mb-6">
-          <span class="gradient-text" transition:name="main-heading">Skills & Technologies</span>
-        </h1>
-        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-          A comprehensive overview of my technical expertise and the technologies I work with.
-        </p>
-        <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto mt-8"></div>
-      </div>
-    </div>
-  </section>
+    <Header currentPage='skills' />
 
-  <!-- Skills Section -->
-  <section class="py-20 bg-black">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Frontend -->
-        <div class="bg-gradient-to-br from-purple-600/10 to-purple-800/10 p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
-          <h3 class="text-2xl font-bold mb-6 gradient-text">Frontend</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">Vue.js / Nuxt</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full" style="width: 95%"></div>
-              </div>
+    <!-- Skills Hero Section -->
+    <section class='pt-32 pb-20 bg-gradient-to-b from-black to-gray-900'>
+        <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div class='text-center mb-16'>
+                <a
+                    href='/'
+                    class='inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-8 transition-colors'
+                >
+                    <ArrowLeft class='w-5 h-5' />
+                    Back to Home
+                </a>
+                <h1 class='text-5xl md:text-7xl font-bold mb-6'>
+                    <span class='gradient-text' transition:name='main-heading'>Skills & Technologies</span>
+                </h1>
+                <p class='text-xl text-gray-400 max-w-2xl mx-auto'>
+                    A comprehensive overview of my technical expertise and the technologies I work with.
+                </p>
+                <div class='w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto mt-8'></div>
             </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">React / Next.js</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">TypeScript</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full" style="width: 88%"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">CSS / Tailwind</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full" style="width: 92%"></div>
-              </div>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Backend & Tools -->
-        <div class="bg-gradient-to-br from-blue-600/10 to-blue-800/10 p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
-          <h3 class="text-2xl font-bold mb-6 gradient-text">Backend & Tools</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">Node.js</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full" style="width: 85%"></div>
-              </div>
+    <!-- Skills Section -->
+    <section class='py-20 bg-black'>
+        <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div class='grid md:grid-cols-3 gap-8'>
+                <!-- Frontend -->
+                <div
+                    class='bg-gradient-to-br from-purple-600/10 to-purple-800/10 p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300'
+                >
+                    <h3 class='text-2xl font-bold mb-6 gradient-text'>Frontend</h3>
+                    <div class='space-y-3'>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>Vue.js / Nuxt</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full'
+                                    style='width: 95%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>React / Next.js</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full'
+                                    style='width: 90%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>TypeScript</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full'
+                                    style='width: 88%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>CSS / Tailwind</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-purple-600 to-blue-600 h-2 rounded-full'
+                                    style='width: 92%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Tools -->
+                <div
+                    class='bg-gradient-to-br from-blue-600/10 to-blue-800/10 p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300'
+                >
+                    <h3 class='text-2xl font-bold mb-6 gradient-text'>Backend & Tools</h3>
+                    <div class='space-y-3'>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>Node.js</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 85%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>Git / GitHub</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 90%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>Docker</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 75%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>CI/CD</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 80%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specializations -->
+                <div
+                    class='bg-gradient-to-br from-pink-600/10 to-pink-800/10 p-8 rounded-2xl border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300'
+                >
+                    <h3 class='text-2xl font-bold mb-6 gradient-text'>Specializations</h3>
+                    <div class='space-y-3'>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>Performance</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 92%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>SEO</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 88%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>UX/UI Design</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 85%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class='flex items-center justify-between'>
+                            <span class='text-gray-300'>Testing</span>
+                            <div class='w-24 bg-gray-700 rounded-full h-2'>
+                                <div
+                                    class='bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full'
+                                    style='width: 82%'
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">Git / GitHub</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">Docker</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full" style="width: 75%"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">CI/CD</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full" style="width: 80%"></div>
-              </div>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Specializations -->
-        <div class="bg-gradient-to-br from-pink-600/10 to-pink-800/10 p-8 rounded-2xl border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300">
-          <h3 class="text-2xl font-bold mb-6 gradient-text">Specializations</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">Performance</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full" style="width: 92%"></div>
-              </div>
+    <!-- Additional Skills Section -->
+    <section class='py-20 bg-gradient-to-b from-gray-900 to-black'>
+        <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div class='text-center mb-16'>
+                <h2 class='text-4xl md:text-5xl font-bold mb-6'>
+                    <span class='gradient-text'>Additional Technologies</span>
+                </h2>
+                <div class='w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto'></div>
             </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">SEO</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full" style="width: 88%"></div>
-              </div>
+
+            <div class='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+                <div
+                    class='bg-white/5 p-6 rounded-xl border border-white/10 hover:border-purple-500/30 transition-all duration-300'
+                >
+                    <h3 class='text-lg font-semibold text-white mb-2'>Frameworks</h3>
+                    <div class='space-y-1 text-gray-400 text-sm'>
+                        <div>• Vue.js / Nuxt.js</div>
+                        <div>• React / Next.js</div>
+                        <div>• Astro</div>
+                        <div>• Svelte</div>
+                    </div>
+                </div>
+
+                <div
+                    class='bg-white/5 p-6 rounded-xl border border-white/10 hover:border-blue-500/30 transition-all duration-300'
+                >
+                    <h3 class='text-lg font-semibold text-white mb-2'>Styling</h3>
+                    <div class='space-y-1 text-gray-400 text-sm'>
+                        <div>• Tailwind CSS</div>
+                        <div>• CSS Modules</div>
+                        <div>• Styled Components</div>
+                        <div>• Sass/SCSS</div>
+                    </div>
+                </div>
+
+                <div
+                    class='bg-white/5 p-6 rounded-xl border border-white/10 hover:border-green-500/30 transition-all duration-300'
+                >
+                    <h3 class='text-lg font-semibold text-white mb-2'>Tools</h3>
+                    <div class='space-y-1 text-gray-400 text-sm'>
+                        <div>• Git & GitHub</div>
+                        <div>• Docker</div>
+                        <div>• Webpack / Vite</div>
+                        <div>• ESLint / Prettier</div>
+                    </div>
+                </div>
+
+                <div
+                    class='bg-white/5 p-6 rounded-xl border border-white/10 hover:border-pink-500/30 transition-all duration-300'
+                >
+                    <h3 class='text-lg font-semibold text-white mb-2'>Testing</h3>
+                    <div class='space-y-1 text-gray-400 text-sm'>
+                        <div>• Jest</div>
+                        <div>• Vitest</div>
+                        <div>• Cypress</div>
+                        <div>• Playwright</div>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">UX/UI Design</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full" style="width: 85%"></div>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-gray-300">Testing</span>
-              <div class="w-24 bg-gray-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full" style="width: 82%"></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Additional Skills Section -->
-  <section class="py-20 bg-gradient-to-b from-gray-900 to-black">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">
-          <span class="gradient-text">Additional Technologies</span>
-        </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto"></div>
-      </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-purple-500/30 transition-all duration-300">
-          <h3 class="text-lg font-semibold text-white mb-2">Frameworks</h3>
-          <div class="space-y-1 text-gray-400 text-sm">
-            <div>• Vue.js / Nuxt.js</div>
-            <div>• React / Next.js</div>
-            <div>• Astro</div>
-            <div>• Svelte</div>
-          </div>
-        </div>
-
-        <div class="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-blue-500/30 transition-all duration-300">
-          <h3 class="text-lg font-semibold text-white mb-2">Styling</h3>
-          <div class="space-y-1 text-gray-400 text-sm">
-            <div>• Tailwind CSS</div>
-            <div>• CSS Modules</div>
-            <div>• Styled Components</div>
-            <div>• Sass/SCSS</div>
-          </div>
-        </div>
-
-        <div class="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-green-500/30 transition-all duration-300">
-          <h3 class="text-lg font-semibold text-white mb-2">Tools</h3>
-          <div class="space-y-1 text-gray-400 text-sm">
-            <div>• Git & GitHub</div>
-            <div>• Docker</div>
-            <div>• Webpack / Vite</div>
-            <div>• ESLint / Prettier</div>
-          </div>
-        </div>
-
-        <div class="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-pink-500/30 transition-all duration-300">
-          <h3 class="text-lg font-semibold text-white mb-2">Testing</h3>
-          <div class="space-y-1 text-gray-400 text-sm">
-            <div>• Jest</div>
-            <div>• Vitest</div>
-            <div>• Cypress</div>
-            <div>• Playwright</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <Footer />
+    <Footer />
 </Layout>
