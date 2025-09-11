@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ParticleBackground from '../components/ParticleBackground.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { Users, User, Package, ArrowLeft, ExternalLink } from '@lucide/astro';
+import { Users, User, Package, ExternalLink } from '@lucide/astro';
 ---
 
 <Layout title='Projects - David Olmos'>
@@ -80,6 +80,7 @@ import { Users, User, Package, ArrowLeft, ExternalLink } from '@lucide/astro';
                     </p>
                     <div class='flex flex-wrap gap-2 mb-4'>
                         <span class='px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm'>React</span>
+                        <span class='px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm'>LESS</span>
                         <span class='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm'>PHP</span>
                         <span class='px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm'>AWS</span>
                     </div>
@@ -194,6 +195,45 @@ import { Users, User, Package, ArrowLeft, ExternalLink } from '@lucide/astro';
                         <span class='px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm'>Netlify</span>
                     </div>
                 </a>
+
+                <!-- Trading Bot -->
+                <a
+                    href='https://github.com/davolcu/rsi-trading-bot'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    class='group bg-gradient-to-br from-yellow-600/10 to-orange-600/10 p-6 rounded-2xl border border-white/10 hover:border-yellow-500/40 transition-all duration-300 hover:scale-105 block'
+                >
+                    <h3 class='text-xl font-bold mb-2 gradient-text flex items-center gap-2'>
+                        Trading Bot
+                        <ExternalLink class='w-5 h-5 text-yellow-400 group-hover:text-yellow-300' />
+                    </h3>
+                    <p class='text-gray-400 mb-4'>
+                        An automated cryptocurrency trading bot that uses RSI (Relative Strength Index) indicators to
+                        execute trades on Binance. The bot monitors market conditions and makes informed trading
+                        decisions based on technical analysis.
+                    </p>
+                    <div class='flex flex-wrap gap-2 mb-4'>
+                        <span class='px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm'>Python</span>
+                        <span class='px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm'>Binance API</span>
+                    </div>
+                </a>
+
+                <!-- Portfolio -->
+                <div
+                    class='group bg-gradient-to-br from-purple-600/10 to-pink-600/10 p-6 rounded-2xl border border-white/10 hover:border-purple-500/40 transition-all duration-300 hover:scale-105 block'
+                >
+                    <h3 class='text-xl font-bold mb-2 gradient-text flex items-center gap-2'>Portfolio</h3>
+                    <p class='text-gray-400 mb-4'>
+                        This portfolio website showcasing my professional work, skills, and projects. Built with modern
+                        web technologies for optimal performance and user experience, featuring responsive design and
+                        smooth animations.
+                    </p>
+                    <div class='flex flex-wrap gap-2 mb-4'>
+                        <span class='px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm'>Astro</span>
+                        <span class='px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm'>Tailwind</span>
+                        <span class='px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm'>Netlify</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -228,6 +268,30 @@ import { Users, User, Package, ArrowLeft, ExternalLink } from '@lucide/astro';
                     <div class='flex flex-wrap gap-2 mb-4'>
                         <span class='px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm'>JavaScript</span>
                         <span class='px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm'>Rollup</span>
+                    </div>
+                </a>
+
+                <!-- Vue Super Components -->
+                <a
+                    href='https://github.com/davolcu/vue-super-components'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    class='group bg-gradient-to-br from-red-600/10 to-orange-600/10 p-6 rounded-2xl border border-white/10 hover:border-red-500/40 transition-all duration-300 hover:scale-105 block relative'
+                >
+                    <h3 class='text-xl font-bold mb-2 gradient-text flex items-center gap-2'>
+                        Vue Super Components
+                        <ExternalLink class='w-5 h-5 text-red-400 group-hover:text-red-300' />
+                    </h3>
+                    <p class='text-gray-400 mb-4'>
+                        Vue Super Components is an NPM package that adds inheritance mechanisms to Vue components.
+                        Allowing automatic extension of props, data, and methods from parent components
+                    </p>
+                    <div class='flex flex-wrap gap-2 mb-4'>
+                        <span class='px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm'>JavaScript</span>
+                        <span class='px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm'>Rollup</span>
+                        <span class='px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm font-semibold'>
+                            Deprecated
+                        </span>
                     </div>
                 </a>
             </div>
